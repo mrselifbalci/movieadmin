@@ -1,0 +1,164 @@
+/* MODAL EDIT START*/
+.categories-faq-modal-content {
+  height: 460px;
+  background-color: var(--bg-dark);
+  border: none;
+  width: 60%;
+  margin: 1% auto 1% auto;
+}
+.categories-faq-modal-content:focus {
+  outline: none;
+  box-shadow: none;
+}
+.categories-faq-modal-overlay {
+  position: fixed;
+  top: var(--header-height);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.6);
+}
+.edit-categories-faq-modal-title {
+  color: var(--text-color-primary);
+  width: 100%;
+  text-align: center;
+}
+.close-categories-faq-modal-x {
+  color: var(--button-red);
+  text-align: right;
+  font-size: var(--title-font-size);
+  margin-right: 2%;
+  padding-top: 1%;
+}
+.categories-faq-modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-primary);
+  font-size: var(--font-size-lg);
+  width: 100%;
+}
+.categories-faq-modal-form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.categories-faq-modal-container input,
+.categories-faq-modal-container textarea,
+.categories-faq-modal-container select {
+  background-color: var(--text-color-secondary);
+  border: none;
+  height: 20px;
+  padding: 1%;
+  border-radius: 5px;
+  width: 60%;
+  color: var(--text-color-primary);
+}
+.categories-faq-modal-container select {
+  height: 30px;
+  width: 20%;
+}
+.categories-faq-modal-container textarea {
+  min-height: 100px;
+}
+.category-faq-update-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2%;
+}
+.category-faq-update-button {
+  width: 150px;
+}
+
+/* MODAL EDIT END*/
+
+.add-item-container {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-item-title {
+  font-size: var(--title-font-size);
+}
+.add-item-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 3%;
+  background-color: var(--bg-light);
+}
+.add-item {
+  display: flex;
+  justify-content: center;
+}
+.add-item input,
+.add-item textarea {
+  background-color: var(--bg-dark);
+  border: none;
+  padding: 1%;
+  border-radius: 5px;
+  width: 50%;
+  margin-bottom: 2%;
+}
+.add-item input::placeholder,
+.add-item textarea::placeholder {
+  color: var(--text-color-primary);
+}
+.add-item input {
+  height: 40px;
+}
+.add-item textarea {
+  height: 200px;
+}
+.add-item-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.add-item-buttons-each {
+  margin: 0 1% 0 1%;
+}
+.no-warning-text {
+  display: none;
+}
+.warning-text {
+  color: var(--button-red);
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .add-item-container {
+    min-height: 900px;
+  }
+  .add-item input,
+  .add-item textarea {
+    width: 90%;
+  }
+  .categories-faq-modal-content {
+    height: 420px;
+    width: 80%;
+    margin: 10% auto 1% auto;
+    padding-bottom: 2%;
+  }
+}
+@media (max-width: 545px) {
+  .add-item-form-container {
+    min-height: 500px;
+  }
+  .add-item-title {
+    font-size: var(--font-size-lg);
+  }
+  .categories-faq-modal-content {
+    margin: 20% auto 1% auto;
+  }
+}

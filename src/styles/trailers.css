@@ -1,0 +1,318 @@
+/*MODAL EDIT FORM START*/
+
+.close-modal-x {
+  color: var(--button-red);
+  text-align: right;
+  font-size: var(--title-font-size);
+}
+.modal-form {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color-primary);
+  font-size: var(--font-size-lg);
+}
+.modal-form-column-one {
+  padding: 1%;
+  width: 45%;
+}
+.modal-form-column-two {
+  padding: 1%;
+  width: 45%;
+}
+.react-player-wrapper {
+  width: auto;
+  height: auto;
+}
+.modal-react-player {
+  padding: 0 1% 1% 1%;
+}
+.additional-info-items-show {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-group-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+.modal-form-item {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-item label {
+  margin-top: 2%;
+}
+.modal-container input,
+.modal-container textarea,
+.modal-container select {
+  background-color: var(--text-color-secondary);
+  border: none;
+  height: 20px;
+  min-width: 200px;
+  padding: 1%;
+  border-radius: 5px;
+  margin: 2% 0 0 2%;
+  width: 100%;
+  color: var(--text-color-primary);
+}
+.modal-container textarea {
+  min-height: 100px;
+}
+.trailer-update-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2%;
+}
+.trailer-update-button {
+  width: 150px;
+}
+/*MODAL EDIT FORM END*/
+
+/*TRAILER DETAIL START*/
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.trailer-detail-summary-container {
+  margin: 0 2% 0 2%;
+}
+.trailer-detail-summary-container p {
+  font-size: var(--font-size-lg);
+}
+.trailer-detail-info-container h3 {
+  font-size: var(--title-font-size);
+  color: var(--button-red);
+}
+.trailer-detail-info-span {
+  font-size: var(--font-size-lg);
+  color: var(--text-color-primary);
+}
+.trailer-detail-info-container {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.trailer-detail-summary-span {
+  font-size: var(--font-size-lg);
+  color: var(--text-color-primary);
+}
+.media-container {
+  display: flex;
+  justify-content: space-around;
+}
+.trailer-images {
+  width: 300px;
+  height: 300px;
+  border-radius: 4px;
+}
+.trailer-detail-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+.back-to-trailers-button {
+  font-size: var(--font-size-lg);
+  color: var(--text-color-primary);
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  min-width: 200px;
+}
+
+/*TRAILER DETAIL END*/
+
+/* ADD TRAILER START */
+.add-trailer-container {
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+}
+.add-trailer-title-text {
+  width: 100%;
+  text-align: center;
+  font-size: var(--title-font-size);
+  padding-top: 2%;
+}
+.add-trailer-website-text {
+  font-size: var(--font-size-lg);
+}
+.add-trailer-website-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-trailer-website-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+.add-trailer-add-website-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.add-trailer-add-website-form input {
+  width: 45%;
+  background-color: var(--bg-dark);
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+}
+.add-trailer-add-website-form input::placeholder {
+  color: var(--text-color-primary);
+  padding-left: 2%;
+}
+.add-trailer-button-container {
+  margin-top: 1%;
+  width: 80%;
+  text-align: right;
+}
+.add-trailer-website-button {
+  height: 40px;
+}
+.add-trailer-form-container input,
+.add-trailer-form-container select {
+  width: 45%;
+  background-color: var(--bg-dark);
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  color: var(--text);
+}
+.add-trailer-form-container input::placeholder {
+  color: var(--text-color-primary);
+  padding-left: 2%;
+}
+.add-trailer-form-container {
+  display: flex;
+  flex-direction: column;
+}
+.add-trailer-category {
+  width: 100%;
+  text-align: center;
+  margin: 2% 0 2% 0;
+}
+.add-trailer-main {
+  display: flex;
+}
+.add-trailer-main-column-one,
+.add-trailer-main-column-two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+.items-not-visible {
+  display: none;
+}
+.items-visible {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.genre-wrapper {
+  width: 80%;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  background-color: var(--bg-dark);
+}
+.genre-input-container {
+  display: flex;
+  width: 33%;
+}
+.genre-input-container input {
+  width: 20%;
+}
+.genre-input-container label {
+}
+.add-trailer-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+.add-trailer-item input {
+  width: 80%;
+  margin-top: 2%;
+}
+.add-trailer-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2%;
+  min-height: 100px;
+}
+.add-trailer-button-items {
+  padding: 5%;
+  width: 100px;
+}
+.loading-text {
+  color: var(--button-red);
+  min-width: 200px;
+  padding-left: 5%;
+  padding-top: 20%;
+}
+/* ADD TRAILER END */
+
+@media (max-width: 768px) {
+  .modal-form {
+    flex-direction: column;
+  }
+  .modal-form-column-one,
+  .modal-form-column-two {
+    width: 90%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+  .back-to-trailers-button {
+    margin-top: 5%;
+  }
+  .add-trailer-website-form-container,
+  .add-trailer-button-container {
+    width: 90%;
+  }
+  .add-trailer-add-website-form input {
+    width: 40%;
+  }
+  .add-trailer-website-button {
+    height: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .media-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .back-to-trailers-button {
+    margin-bottom: 10%;
+  }
+  .add-trailer-add-website-form input {
+    height: 30px;
+  }
+  .add-trailer-main {
+    flex-direction: column;
+  }
+  .add-trailer-title-text {
+    font-size: var(--font-size-lg);
+  }
+}

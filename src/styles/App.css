@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-medium);
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --header-height: 80px;
+  --footer-height: 40px;
+  --sidebar-width: 205px;
+  --bg-dark: #101010;
+  --bg-medium: #181818;
+  --bg-light: #202020;
+  --bg-modal-overlay: rgba(211, 211, 211, 0.6);
+  --bg-view-icon: rgba(246, 138, 4, 0.2);
+  --bg-edit-icon: rgba(20, 231, 136, 0.2);
+  --bg-delete-icon: rgba(226, 14, 2, 0.2);
+  --view-icon-color: #f68a04;
+  --edit-icon-color: #14e788;
+  --delete-icon-color: #e20e02;
+  --button-red: #e20e02;
+  --text-color-primary: white;
+  --text-color-secondary: grey;
+  --title-font-size: 25px;
+  --font-size-lg: 18px;
+  --font-size-md: 15px;
+  --font-size-sm: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.component-wrapper {
+  background-color: var(--bg-dark);
+  min-width: 98%;
+  width: fit-content;
+  color: var(--text-color-primary);
+  min-height: 90vh;
+}
+.content-wrapper {
+  display: flex;
+  min-width: 100vh;
+  overflow: scroll;
+  margin-top: var(--header-height);
+  margin-left: var(--sidebar-width);
+}
+.submit-button {
+  background-color: var(--button-red);
+  border: none;
+  border-radius: 2px;
+  color: var(--text-color-primary);
+  font-size: var(--font-size-lg);
+  padding: 1%;
+  text-align: center;
+}
+.cancel-button {
+  background-color: var(--text-color-secondary);
+  border: none;
+  border-radius: 2px;
+  color: var(--text-color-primary);
+  font-size: var(--font-size-lg);
+  padding: 1%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin-left: 0;
+  }
+  :root {
+    --header-height: 70px;
+  }
+}
